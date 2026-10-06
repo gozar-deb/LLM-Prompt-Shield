@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Model artifacts (large binaries — export locally with scripts/export_onnx_model.py)
+app/models/*.onnx
+app/models/tokenizer/
+
+# Logs
+logs/
+*.jsonl
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Docker
+*.pid
